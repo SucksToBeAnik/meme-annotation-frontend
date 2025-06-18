@@ -27,21 +27,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <nav className="bg-secondary p-2 px-6 rounded-2xl m-6">
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-mono">Meme<span className="font-mono px-1 inline-flex font-light">Annotation</span></h1>
+            <h1 className="text-2xl font-mono">
+              Meme
+              <span className="font-mono px-1 inline-flex font-light">
+                Annotation
+              </span>
+            </h1>
             <div className="flex items-center gap-4">
-              <Link href="/" className="text-lg font-mono">Home</Link>
-              <Link href="/annotate" className="text-lg font-mono">Annotate</Link>
+              <Link href="/" className="text-lg font-mono">
+                Home
+              </Link>
+              <Link href="/annotate" className="text-lg font-mono">
+                Annotate
+              </Link>
             </div>
           </div>
-
         </nav>
         <main>{children}</main>
         <Toaster />
-
       </body>
     </html>
   );

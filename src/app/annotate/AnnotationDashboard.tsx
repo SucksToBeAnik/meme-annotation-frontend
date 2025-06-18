@@ -23,13 +23,13 @@ export default function AnnotationDashboard({
   };
 
   return (
-    <div className="flex justify-between px-4 gap-6">
+    <div className="flex justify-between px-4 gap-6 overflow-x-hidden">
       <MemeListPreview
         memes={memes}
         selectedMeme={selectedMeme}
         setSelectedMeme={setSelectedMeme}
       />
-      <div className="grow">
+      <div className="flex-1">
         <AnnotateMeme
           memes={memes}
           selectedMeme={selectedMeme}
